@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Login</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(37, 37, 37);
+        }
+
+        h3 {                            /* Mesagem de Boas Vindas*/
+            color: whitesmoke;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        form {                          /* Corpo do formulario*/
+            background-color: rgb(15, 15, 15);
+            max-width: 500px;
+            width: 70%;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 10px 10px 2px;
+        }
+
+        form input[type="text"],        /* Campo de inserção de dados*/
+        form input[type="password"] {   /* Campo de inserção de dados*/
+            background-color: rgb(15, 15, 15);
+            color: whitesmoke;
+            text-align: center;
+            width: 80%;
+            height: 45px;
+            border-radius: 30px;
+            border-style: double;
+            border-color: rgb(67, 79, 247);
+            margin-left: 10%;
+            margin-top: 20px;
+            outline: none;
+        }
+
+        form input[type="button"] {     /* Campo de Login*/
+            
+            background-color: rgb(15, 15, 15);
+            color: whitesmoke;
+            width: 50%;
+            height: 45px;
+            border-radius: 30px;
+            border-style: double;
+            border-color: rgb(0, 255, 242);
+            margin-top: 20px;
+            margin-left: 25%;
+            outline: none;
+            cursor: pointer;
+        }
+
+        form input[type="button"]:hover, form input[type="button"]:focus{      /* Campo de efeitos no botão de acesso*/
+            background-image: linear-gradient(225deg, rgb(0, 255, 242), rgb(0, 162, 255));
+            font-weight: 800;
+        }
+
+        form input[type="text"]:focus,      /* Campo de efeitos na inserção de dados*/
+        form input[type="password"]:focus { /* Campo de efeitos na inserção de dados*/
+            width: 100%;
+            margin-left: 0;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="login">
+            <h3>Seja bem vindo</h3>
+
+            <input type="text" placeholder="Usuário">
+            <input type="password" placeholder="Senha">
+            <input type="button" value="Login">
+
+        </form>
+    </main>
+</body>
+
+</html>
